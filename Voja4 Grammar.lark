@@ -1,0 +1,93 @@
+start: line+
+
+line: ( instruction | label | goto | gosub ) "\n"
+    | ( instruction | label | goto | gosub ) comment "\n"
+    | comment "\n"
+
+comment: ";" COMMENT
+COMMENT: /.+/
+
+label: LABEL ":"
+LABEL: ("a".."z" | DIGIT)+
+
+goto: "GOTO" LABEL
+gosub: "GOSUB" LABEL
+
+instruction: "ADD" reg4 "," reg4                   -> inst_0001
+           | "ADC" reg4 "," reg4                   -> inst_0010
+           | "SUB" reg4 "," reg4                   -> inst_0011
+           | "SBB" reg4 "," reg4                   -> inst_0100
+           | "OR" reg4","  reg4                    -> inst_0101
+           | "AND" reg4 "," reg4                   -> inst_0110
+           | "XOR" reg4 "," reg4                   -> inst_0111
+           | "MOV" reg4 "," reg4                   -> inst_1000
+           | "MOV" reg4 "," num4                   -> inst_1001
+           | "MOV" "[" reg4 ":" reg4 "]" "," "R0"  -> inst_1010
+           | "MOV" "R0" "," "[" reg4 ":" reg4 "]"  -> inst_1011
+           | "MOV" "[" num4 ":" num4 "]" "," "R0"  -> inst_1100
+           | "MOV" "[" num8 "]" "," "R0"           -> inst_1100
+           | "MOV" "R0" "," "[" num4 ":" num4 "]"  -> inst_1101
+           | "MOV" "R0" "," "[" num8 "]"           -> inst_1101
+           | "MOV" "PC" "," num4 ":" num4          -> inst_1110
+           | "JR"  num8                            -> inst_1111
+           | "CP" "R0" "," num4                    -> inst_0000_0000
+           | "ADD" "R0" "," num4                   -> inst_0000_0001
+           | "INC" reg4                            -> inst_0000_0010
+           | "DEC" reg4                            -> inst_0000_0011
+           | "DSZ" reg4                            -> inst_0000_0100
+           | "OR" "R0" "," num4                    -> inst_0000_0101
+           | "AND" "R0" "," num4                   -> inst_0000_0110
+           | "XOR" "R0" "," num4                   -> inst_0000_0111
+           | "EXR" num4                            -> inst_0000_1000
+           | "BIT" reg2 "," num2                   -> inst_0000_1001
+           | "BSET" reg2 "," num2                  -> inst_0000_1010
+           | "BCLR" reg2 "," num2                  -> inst_0000_1011
+           | "BTG" reg2 "," num2                   -> inst_0000_1100
+           | "RRC" num4                            -> inst_0000_1101
+           | "RET" "R0" "," num4                   -> inst_0000_1110
+           | "SKIP" test "," jump                  -> inst_0000_1111
+
+reg2: "R0"  -> reg2_00
+    | "R1"  -> reg2_01
+    | "R2"  -> reg2_10
+    | "RIn" -> reg2_11
+
+reg4: "R0"  -> reg4_0000
+    | "R1"  -> reg4_0001
+    | "R2"  -> reg4_0010
+    | "R3"  -> reg4_0011
+    | "R4"  -> reg4_0100
+    | "R5"  -> reg4_0101
+    | "R6"  -> reg4_0110
+    | "R7"  -> reg4_0111
+    | "R8"  -> reg4_1000
+    | "R9"  -> reg4_1001
+    | "R10" -> reg4_1010
+    | "R11" -> reg4_1011
+    | "Out" -> reg4_1010
+    | "In"  -> reg4_1011
+    | "JSR" -> reg4_1100
+    | "PCR" -> reg4_1101
+    | "PCM" -> reg4_1110
+    | "PCH" -> reg4_1111
+
+num2: DEC2
+num4: DEC4 | HEX4
+num8: DEC8 | HEX8
+
+DIGIT: "0".."9"
+DEC2: "0" | "1" | "2" | "3"
+DEC4: "1" ["0" | "1" | "2" | "3" | "4" | "5"] | DIGIT
+DEC8: ["+" | "-"] ["10" | "11" | "12"] DIGIT
+    | ["+" | "-"] DIGIT DIGIT
+
+HEX_DIGIT: DIGIT | "A".."F"
+HEX4: "0x" HEX_DIGIT
+HEX8: "0x" HEX_DIGIT HEX_DIGIT
+
+test: "C"  -> test_00 | "NC" -> test_01 | "Z"  -> test_10 | "NZ" -> test_11
+
+jump: "1" -> jump_01 | "2" -> jump_10 | "3" -> jump_11 | "4" -> jump_00
+
+WHITESPACE: (" " | "\n")+
+%ignore WHITESPACE

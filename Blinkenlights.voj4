@@ -1,0 +1,35 @@
+; Register use:
+; R0 - various uses
+; R1 - [config] Page to display
+; R2 - [config] Num rows to fill
+; R3 - [config] Bit pattern to draw
+; R4 - [config] Sync frequency
+; R5 - [config] Bit pattern to invert
+; R6 - Row about to be drawn
+
+config:
+MOV R1, 3
+MOV R2, 14
+MOV R3, 3
+MOV R4, 15
+MOV R5, 15
+
+setup:
+MOV R0, R1
+MOV [0xF0], R0      ; set page
+MOV R0, R4
+MOV [0xF2], R0      ; set sync frequency
+
+main:
+MOV R0, R3          ; set the bit pattern to draw
+MOV R6, R2          ; set loop counter
+MOV [R1:R6], R0     ; draw the row
+DSZ R6              ; decrement and test
+JR -3               ; loop
+MOV [R1:R6], R0     ; draw final row
+XOR R3, R5          ; invert the bit pattern
+MOV R0, [0xF4]      ; peek at sync timer
+BIT R0, 0           ; test if it fired
+SKIP NZ, 1          ; if so, exit wait loop
+JR -4               ; if not, repeat the wait
+GOTO main           ; repeat whole loop

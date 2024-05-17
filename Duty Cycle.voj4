@@ -1,0 +1,34 @@
+; Register use:
+; R0 - value to draw
+; R1 - page to use
+; R2 - row to use
+; R3 - lower nibble of wait time
+; R4 - upper nibble of wait time
+; R6 - loop lower nibble
+; R7 - loop upper nibble
+
+config:
+MOV R1, 2       ; page
+MOV R2, 0       ; row to draw
+MOV R3, 15      ; lower nibble of wait time
+MOV R4, 1       ; upper nibble of wait time
+MOV R5, 1       ; bit to toggle
+
+setup:
+MOV R0, 0
+MOV [0xF1], R0  ; set clock speed
+MOV R0, R1
+MOV [0xF0], R0  ; set page
+MOV R0, 15
+
+main:
+MOV [R1:R2], R0
+MOV R6, R3
+MOV R7, R4
+wait:
+DSZ R6
+JR -2
+DSZ R7
+JR -4
+BTG R0, 1
+GOTO main
