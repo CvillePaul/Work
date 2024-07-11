@@ -3,6 +3,7 @@
 *.fits
 *.html
 *.tar
+*.zip
+.~lock.*#
 Gemini PIT editor/Gemini_QEB.speckle_iq70.xml
 Gemini PIT editor/Gemini_QEB.speckle_iq85.xml
-.~lock.*#
