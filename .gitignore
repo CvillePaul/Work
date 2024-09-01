@@ -1,4 +1,6 @@
 *.csv
+*.ecsv
+*.txt
 *.pdf
 *.fits
 *.html
