@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<proposal schemaVersion="2025.1.1" tacCategory="Stellar Astrophysics, Evolution, Supernovae, Abundances">
+    <meta band3optionChosen="true" overrideAffiliate="false">
+        <firstAttachment>C:\Users\User\Dropbox\Astro\Other\2024-09-28 Gemini 2025A Proposal\Attachment 1 - science case &amp; design.pdf</firstAttachment>
+        <secondAttachment>C:\Users\User\Dropbox\Astro\Other\2024-09-28 Gemini 2025A Proposal\Attachment 2 - team info &amp; previous use.pdf</secondAttachment>
+    </meta>
+    <semester year="2025" half="A"/>
+    <title>Speckle Imaging of Quadruple Eclipsing Binaries Identified in TESS Data</title>
+    <abstract>While eclipsing binaries (EBs) provide an outsized contribution as calibrators of stellar masses, sizes, temperatures, and luminosities, quadruple EB systems (QEBs), especially compact ones, give unparalleled insight into the complex intra-system dynamics of multistar systems. An unprecedented 200 QEBs have been found with TESS. Exploiting this rich dataset for astrophysics requires follow-up observations to characterize constituent stars, their arrangements, and orbits. In this regard, Gemini speckle imaging can make a unique contribution by resolving and revealing the separation of the binary subsystems of the 2+2 hierarchy, and also making evident those QEBs that are extraordinarily compact and remain unresolved at the Gemini diffraction limit; the latter are compelling candidates for the complex dynamical interactions that are precursors of interesting evolutionary pathways, and that motivate further monitoring by other observational techniques to measure those interactions. We propose to use the `Alopeke and Zorro systems to triple the number of TESS QEBs having such multi-band, diffraction-limited imaging.</abstract>
+    <scheduling></scheduling>
+    <investigators>
+        <pi id="investigator-0">
+            <firstName>Steven</firstName>
+            <lastName>Majewski</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>srm4n@virginia.edu</email>
+            <phone>434-924-4893</phone>
+            <address>
+                <institution>University of Virginia</institution>
+                <address>Department of Astronomy
+PO Box 3818
+Charlottesville
+VA
+22903-0818</address>
+                <country>USA</country>
+            </address>
+        </pi>
+        <coi id="investigator-1">
+            <firstName>James</firstName>
+            <lastName>Davidson</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>jimmy@virginia.edu</email>
+            <phone>434-924-4909</phone>
+            <institution>University of Virginia</institution>
+        </coi>
+        <coi id="investigator-2">
+            <firstName>Elliott</firstName>
+            <lastName>Horch</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>horche2@southernct.edu</email>
+            <phone></phone>
+            <institution>Southern Connecticut State University</institution>
+        </coi>
+        <coi id="investigator-3">
+            <firstName>Robert</firstName>
+            <lastName>Wilson</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>robert.f.wilson@nasa.gov</email>
+            <phone></phone>
+            <institution>NASA Goddard Space Flight Center</institution>
+        </coi>
+        <coi id="investigator-4">
+            <firstName>Veselin</firstName>
+            <lastName>Kostov</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>veselin.b.kostov@nasa.gov</email>
+            <phone></phone>
+            <institution>NASA Goddard Space Flight Center</institution>
+        </coi>
+        <coi id="investigator-5">
+            <firstName>Elisa</firstName>
+            <lastName>Quintana</lastName>
+            <status>PhD</status>
+            <gender>Woman</gender>
+            <email>elisa.quintana@nasa.gov</email>
+            <phone></phone>
+            <institution>NASA Goddard Space Flight Center</institution>
+        </coi>
+        <coi id="investigator-6">
+            <firstName>Paul</firstName>
+            <lastName>McKee</lastName>
+            <status>PhD</status>
+            <gender>Man</gender>
+            <email>pmm3w@virginia.edu</email>
+            <phone></phone>
+            <institution>University of Virginia</institution>
+        </coi>
+    </investigators>
+    <targets/>
+    <conditions/>
+    <blueprints/>
+    <observations/>
+    <proposalClass>
+        <queue tooOption="None" jwstSynergy="false" usLongTerm="false">
+            <band3request>
+                <time units="hr">0.0</time>
+                <minTime units="hr">0.0</minTime>
+            </band3request>
+        </queue>
+    </proposalClass>
+</proposal>
