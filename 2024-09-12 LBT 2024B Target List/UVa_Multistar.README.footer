@@ -1,0 +1,11 @@
+ 
+Calibrations:
+Standard PEPSI calibrations.
+For accurate sky subtraction, we request a sky fiber be taken at the time of observing. 
+
+Multiple observations of two of the targets:
+For two of the targets we request multiple observations.  These are both quadrupole systems for which we seek to calculate full orbital solutions.  Ideally the multiple observations would occur one half a period apart, but, due to the complexity of the systems and the relatively short periods of the systems, any additional observations spaced at least many hours apart would be helpful.
+
+TIC 367448265 is a quadruple system with periods of 0.4 (A system) and 1.8 (B system) days.  
+
+TIC 470710327 is a quadruple system with periods of 1.1 (A) and 20.0 (B) days.
