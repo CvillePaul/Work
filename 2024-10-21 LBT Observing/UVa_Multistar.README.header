@@ -1,0 +1,25 @@
+Project ID: UV-2024B-007
+     Title: Characterizing Quadruple and Sextuple Eclipsing Binaries with PEPSI
+
+Instrument: PEPSI PFU
+
+PI: Steven Majewski
+
+Run Contact:
+   Name: Steven Majewski (UVA) / Robert Wilson (NASA)
+   Phone: srm4n@virginia.edu   / 210.487.0187
+   Contact Times: all / all
+
+Conditions Required:
+   Moon: Any
+   Desired Seeing: Any
+   Cloud Cover: Any
+
+Program Summary:
+
+Targets are TESS identified eclipsing quadruple systems (2 sets of Eclipsing Binaries, each showing both a Primary and Secondary Eclipse).  
+
+There are three objectives for this run:
+1) Better understand the relation between exposure times from the PEPSI exposure time calculator vs the quality of spectra obtained.
+2) Accumulate spectra towards the goal of using radial velocity measurements to characterize the orbital dynamics of the systems.
+

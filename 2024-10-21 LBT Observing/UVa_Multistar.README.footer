@@ -1,0 +1,10 @@
+
+(Exposure times are in minutes)
+ 
+Calibrations:
+Standard PEPSI calibrations.
+For accurate sky subtraction, we request a sky fiber be taken at the time of observing. 
+
+Obtaining multiple measurements of the targets is desireable.
+Because these are relatively short period systems, followup measurements as little as 6 hours apart will be of use in determining orbital parameters.
+Repeat measurements of longer cadence are equally useful.
