@@ -19,31 +19,32 @@ Program Summary:
 
 Targets are TESS identified eclipsing quadruple systems (2 sets of Eclipsing Binaries, each showing both a Primary and Secondary Eclipse).
 
-There are three objectives for this run:
+There are two objectives for this run:
 1) Better understand the relation between exposure times from the PEPSI exposure time calculator vs the quality of spectra obtained.
 2) Accumulate spectra towards the goal of using radial velocity measurements to characterize the orbital dynamics of the systems.
 
- Target Name        RA         DEC       Vmag  Teff Fiber BLUE Cross Disperser BLUE CD NExp BLUE CD Exp Time RED Cross Disperser RED CD NExp RED CD Exp Time Desired BLUE SNR Desired RED SNR Priority Notes
+ Target Name        RA         Dec       Vmag  Teff Fiber BLUE Cross Disperser BLUE CD NExp BLUE CD Exp Time RED Cross Disperser RED CD NExp RED CD Exp Time Desired BLUE SNR Desired RED SNR Priority Notes
 -------------- ----------- ------------ ------ ---- ----- -------------------- ------------ ---------------- ------------------- ----------- --------------- ---------------- --------------- -------- -----
-TIC 283940788   0:35:24.34 +62:54:05.74 11.774 7384   300                    3            1             5.36                   6           1            5.36              100             100   Normal
-TIC 52856877    1:09:20.23 +61:02:28.48 10.969 8886   300                    3            1             3.59                   6           1            3.59              100             100     High
-TIC 161043618  14:53:42.04 +52:42:57.05 12.497 5860   300                    3            1             7.42                   6           1            7.42              100             100   Normal
-TIC 123098844  18:38:17.48 +44:41:54.96 11.136 6761   300                    3            1             2.58                   6           1            2.58              100             100     High
-TIC 89278612   20:04:52.68 +32:38:34.99 11.235 8740   300                    3            1             4.59                   6           1            4.59              100             100   Normal
-TIC 278352276  20:30:00.87 +48:36:25.40 10.387 7156   300                    3            1             1.37                   6           1            1.37              100             100     High
-TIC 322727163  20:38:51.99 +50:28:00.55 10.997 7877   300                    3            1             3.36                   6           1            3.36              100             100   Normal
-TIC 375325607  21:03:10.34 +55:28:09.53 12.682   --   300                    3            1             8.79                   6           1            8.79              100             100   Normal
-TIC 427092089  21:24:26.88 +64:22:50.46 12.367 8760   300                    3            1            13.01                   6           1           13.01              100             100   Normal
-TIC 414026507  22:27:21.05 +56:44:25.30 10.899 9187   300                    3            1             3.37                   6           1            3.37              100             100     High
-TIC 25818450   23:30:58.43 +53:04:08.94 11.782 7172   300                    3            1             4.94                   6           1            4.94              100             100   Normal
-TIC 470710327  23:49:18.97 +61:57:46.03   9.65 8986   300                    3            1             1.07                   6           1            1.07              100             100   Normal
-
-(Exposure times are in minutes)
+TIC 123098844  18:38:17.48 +44:41:54.96 11.136 6761   300                    3            1             4.68                   6           1            4.68              100             100
+TIC 89278612   20:04:52.68 +32:38:34.99 11.235 8740   300                    3            1             8.31                   6           1            8.31              100             100
+TIC 278352276  20:30:00.87 +48:36:25.40 10.387 7156   300                    3            1             2.47                   6           1            2.47              100             100
+TIC 322727163  20:38:51.99 +50:28:00.55 10.997 7877   300                    3            1             6.09                   6           1            6.09              100             100
+TIC 375325607  21:03:10.34 +55:28:09.53 12.682   --   300                    3            1            15.94                   6           1           15.94              100             100
+TIC 427092089  21:24:26.88 +64:22:50.46 12.367 8760   300                    3            1            23.58                   6           1           23.58              100             100
+TIC 414026507  22:27:21.05 +56:44:25.30 10.899 9187   300                    3            1             6.10                   6           1            6.10              100             100
+TIC 25818450   23:30:58.43 +53:04:08.94 11.782 7172   300                    3            1             8.94                   6           1            8.94              100             100
+TIC 470710327  23:49:18.97 +61:57:46.03   9.65 8986   300                    3            1             1.93                   6           1            1.93              100             100
+TIC 283940788   0:35:24.34 +62:54:05.74 11.774 7384   300                    3            1             9.72                   6           1            9.72              100             100
+TIC 307119043   0:59:18.61 +51:13:17.91   9.94 7815   300                    3            1             1.79                   6           1            1.79              100             100
+TIC 52856877    1:09:20.23 +61:02:28.48 10.969 8886   300                    3            1             6.51                   6           1            6.51              100             100
+TIC 389836747   1:33:10.91 +61:35:07.11 10.718 8874   300                    3            1             5.16                   6           1            5.16              100             100
 
 Calibrations:
 Standard PEPSI calibrations.
 For accurate sky subtraction, we request a sky fiber be taken at the time of observing.
 
-Obtaining multiple measurements of the targets is desireable.
-Because these are relatively short period systems, followup measurements as little as 6 hours apart will be of use in determining orbital parameters.
-Repeat measurements of longer cadence are equally useful.
+Instructions:
+Our goal for this observing session is to obtain unambiguous radial velocity measurements for these Quad binary systems.
+We therefore seek observations when one of the two binary systems is in eclipse and the other is halfway between eclipses.
+The included .xlsx and .pdf files give the observing priority of each system on an hour-by-hour basis.
+For a given UTC day & hour, please observe the target with the highest indicated priority and avoid targets with empty cells.
