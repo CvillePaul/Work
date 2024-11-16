@@ -1,0 +1,19 @@
+ 
+Calibrations:
+Standard PEPSI calibrations.
+For accurate sky subtraction, we request a sky fiber be taken at the time of observing. 
+
+Instructions:
+Our goal for this observing session is to obtain unambiguous radial velocity measurements for these Quad binary systems.
+We therefore seek observations when one of the two binary systems is in eclipse and the other is halfway between eclipses.
+The included .xlsx and .pdf files give the observing priority of each system on an hour-by-hour basis.
+For a given UTC day & hour, please observe the target with the highest indicated priority and avoid targets with empty cells.
+
+ ######  ######     #    ####### ####### 
+ #     # #     #   # #   #          #    
+ #     # #     #  #   #  #          #    
+ #     # ######  #     # #####      #    
+ #     # #   #   ####### #          #    
+ #     # #    #  #     # #          #    
+ ######  #     # #     # #          #    
+ 
