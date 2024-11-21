@@ -4,16 +4,9 @@ Standard PEPSI calibrations.
 For accurate sky subtraction, we request a sky fiber be taken at the time of observing. 
 
 Instructions:
-Our goal for this observing session is to obtain unambiguous radial velocity measurements for these Quad binary systems.
-We therefore seek observations when one of the two binary systems is in eclipse and the other is halfway between eclipses.
 The included .xlsx and .pdf files give the observing priority of each system on an hour-by-hour basis.
 For a given UTC day & hour, please observe the target with the highest indicated priority and avoid targets with empty cells.
-
- ######  ######     #    ####### ####### 
- #     # #     #   # #   #          #    
- #     # #     #  #   #  #          #    
- #     # ######  #     # #####      #    
- #     # #   #   ####### #          #    
- #     # #    #  #     # #          #    
- ######  #     # #     # #          #    
- 
+Science targets are listed first, in the rows with orange background.
+For each science target observed, please also observe the corresponding calibration target, listed in the same column, with the blue background.
+Also note that several science targets use the same calibration target, but a given calibration target need only be observed once.
+Please also try to observe one or more of the Telluric Standard targets listed in the table (HIP 104548, HIP 3897, and/or HIP 16518).

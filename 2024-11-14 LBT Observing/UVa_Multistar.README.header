@@ -1,11 +1,3 @@
- ######  ######     #    ####### ####### 
- #     # #     #   # #   #          #    
- #     # #     #  #   #  #          #    
- #     # ######  #     # #####      #    
- #     # #   #   ####### #          #    
- #     # #    #  #     # #          #    
- ######  #     # #     # #          #    
-
 Project ID: UV-2024B-007
      Title: Characterizing Quadruple and Sextuple Eclipsing Binaries with PEPSI
 
@@ -27,5 +19,6 @@ Program Summary:
 
 Targets are TESS identified eclipsing quadruple systems (2 sets of Eclipsing Binaries, each showing both a Primary and Secondary Eclipse).  
 
-The objective for this run is to capture one of the two binary systems at maximum radial velocity while the other is at minimum radial velocity.  As such, target priorities vary by hour.  For more, see additional commentary, below.
+Our goal for this observing session is to obtain unambiguous radial velocity measurements for these systems.
+We therefore seek observations when one of the two binary systems is in eclipse and the other is halfway between eclipses.
 
