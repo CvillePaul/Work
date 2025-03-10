@@ -2,6 +2,7 @@
 *.ecsv
 *.txt
 *.pdf
+*.tex
 *.fits
 *.html
 *.tar
