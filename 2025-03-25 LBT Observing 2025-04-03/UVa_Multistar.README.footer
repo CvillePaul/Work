@@ -1,0 +1,17 @@
+
+ 
+Calibrations:
+Standard PEPSI calibrations.
+For accurate sky subtraction, we request a sky fiber be taken at the time of observing. 
+
+Instructions:
+The included .pdf files give the observing priority of each system on an hour-by-hour basis.  
+For a given UTC day & hour, please observe the target with the highest indicated priority and avoid targets with empty cells.
+Please do NOT revisit any target already observed, whether science or calibration target.
+
+There are three types of calibration measurement useful in our program:
+1) If possible, please acquire a spectrum, with decent SNR, of the twilight sky.
+2) Please observe one or more of the targets listed as RV Standards.  These are best captured at low airmass/higher altitude.
+3) Please observe only one of the targets listed as a Telluric Standard.  These are best captured at high airmass/low altitude.
+
+For each of these three types of calibrations, only one measurement is necessary per run - no calibration target benefits from repeat observations.
