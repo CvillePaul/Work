@@ -12,6 +12,8 @@
 *.xml
 *.docx
 *.json
+*.jpg
+*.png
 .~lock.*#
 Gemini PIT editor/Gemini_QEB.speckle_iq70.xml
 Gemini PIT editor/Gemini_QEB.speckle_iq85.xml
