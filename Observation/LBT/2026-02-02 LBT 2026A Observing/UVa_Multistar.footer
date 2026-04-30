@@ -7,7 +7,7 @@ For accurate sky subtraction, we request a sky fiber be taken at the time of obs
 Instructions:
 The included .pdf files give the observing priority of each system on an hour-by-hour basis.  
 For a given UTC day & hour, please observe the target with the highest indicated priority and avoid targets with empty cells.
-Please do NOT revisit any target already observed, whether science or calibration target.
+Repeat observations are acceptable only for science targets and only with at least 2 hours between observations.
 
 There are three types of calibration measurement useful in our program:
 1) If possible, please acquire a spectrum, with decent SNR, of the twilight sky.
