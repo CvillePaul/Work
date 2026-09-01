@@ -1,0 +1,10 @@
+
+ 
+Calibrations:
+Standard PEPSI calibrations.
+
+Instructions:
+The binary systems in our targets have periods as short as several hours.
+As such, we provide observing priority for each target in half hour increments, with more asterisks indicating higher priority.
+For any given timeslot, please observe the target with the most asterisks, and avoid observing targets with no asterisks.
+Repeat observations are acceptable as long as they are separated by more than 2 hours and as long as there are still asterisks in that time slot. 
